@@ -160,6 +160,38 @@ class PageVer extends StatelessWidget {
                 ],
               ),
             ),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: TextButton(
+                        onPressed: () {
+                          muzikCal("9");
+                        },
+                        child: Container(
+                          color: Colors.pinkAccent,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: TextButton(
+                        onPressed: () {
+                          muzikCal("10");
+                        },
+                        child: Container(
+                          color: Colors.brown,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
