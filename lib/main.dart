@@ -38,27 +38,13 @@ class PageVer extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("1");
-                        },
-                        child: Container(
-                          color: Colors.amber,
-                        ),
-                      ),
+                      child: builDrumPath("1", Colors.amberAccent),
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("2");
-                        },
-                        child: Container(
-                          color: Colors.orange,
-                        ),
-                      ),
+                      child: builDrumPath("2", Colors.blue),
                     ),
                   ),
                 ],
@@ -69,29 +55,13 @@ class PageVer extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("3");
-                        },
-                        child: Container(
-                          color: Colors.red,
-                        ),
-                      ),
-                    ),
+                        padding: const EdgeInsets.all(0),
+                        child: builDrumPath("3", Colors.green)),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("4");
-                        },
-                        child: Container(
-                          color: Colors.purple,
-                        ),
-                      ),
-                    ),
+                        padding: const EdgeInsets.all(0),
+                        child: builDrumPath("4", Colors.limeAccent)),
                   ),
                 ],
               ),
@@ -101,16 +71,8 @@ class PageVer extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("5");
-                        },
-                        child: Container(
-                          color: Colors.green,
-                        ),
-                      ),
-                    ),
+                        padding: const EdgeInsets.all(0),
+                        child: builDrumPath("5", Colors.pink)),
                   ),
                   Expanded(
                     child: Padding(
@@ -133,29 +95,13 @@ class PageVer extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("7");
-                        },
-                        child: Container(
-                          color: Colors.teal,
-                        ),
-                      ),
-                    ),
+                        padding: const EdgeInsets.all(0),
+                        child: builDrumPath("7", Colors.redAccent)),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("8");
-                        },
-                        child: Container(
-                          color: Colors.indigo,
-                        ),
-                      ),
-                    ),
+                        padding: const EdgeInsets.all(0),
+                        child: builDrumPath("8", Colors.purpleAccent)),
                   ),
                 ],
               ),
@@ -166,27 +112,13 @@ class PageVer extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("9");
-                        },
-                        child: Container(
-                          color: Colors.pinkAccent,
-                        ),
-                      ),
+                      child: builDrumPath("9", Colors.brown),
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(0),
-                      child: TextButton(
-                        onPressed: () {
-                          muzikCal("10");
-                        },
-                        child: Container(
-                          color: Colors.brown,
-                        ),
-                      ),
+                      child: builDrumPath("10", Colors.tealAccent),
                     ),
                   ),
                 ],
@@ -194,6 +126,17 @@ class PageVer extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  TextButton builDrumPath(String ses, Color color) {
+    return TextButton(
+      onPressed: () {
+        muzikCal(ses);
+      },
+      child: Container(
+        color: color,
       ),
     );
   }
